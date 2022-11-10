@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="./style.css" />
+        <title>Food App</title>
+    </head>
+    <body>
+        <div id="header">
+            <div class="header-logo">
+                <a href="/">
+                    <img src="./assets/images/logo.svg" alt="logo" />
+                </a>
+            </div>
+            <div class="header-nav">
+                <div class="overlay"></div>
+                <div class="nav-menu-icon">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <ul class="nav-wrapper">
+                    <li class="nav-item">
+                        <a href=""> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">Product </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=""> Faq</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=""> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="banner">
+            <div class="banner-content">
+                <h3 class="banner-content-name">Food app</h3>
+                <h1 class="banner-content-title">
+                    Why stay hungry when you can order form Bella Onojie
+                </h1>
+                <h3 class="banner-content-download">
+                    Download the bella onoje’s food app now on
+                </h3>
+                <div class="banner-content-button">
+                    <button>Play store</button>
+                    <button>App store</button>
+                </div>
+
+                <div class="banner-content-phone">
+                    <div class="banner-content-phone-1">
+                        <img
+                            src="./assets/images/banner_phone1.svg"
+                            alt="phone"
+                        />
+                    </div>
+                    <div class="banner-content-phone-2">
+                        <img
+                            src="./assets/images/banner_phone2.svg"
+                            alt="phone"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content-container">
+            <div class="content-title">How the app works</div>
+            <div class="content content-create-account">
+                <div class="content-block">
+                    <h2 class="content-block-header">Create an account</h3>
+                    <h3 class="content-block-content" >Create/login to an existing account to get started </h3>
+                    <h4 class="content-block-desc">An account is created with your email and a desired password</h4>
+                </div>
+                <div class="content-image">
+                    <img
+                        src="./assets/images/create-account.svg"
+                        alt="Create an account"
+                    />
+                </div>
+             
+            </div>
+            <div class="content content-explore content--reverse">
+                <div class="content-block">
+                    <h2 class="content-block-header">Explore varieties</h3>
+                    <h3 class="content-block-content" >Shop for your favorites meal as e dey hot.</h3>
+                    <h4 class="content-block-desc">Shop for your favorite meals or drinks and enjoy while doing it.</h4>
+                </div>
+                <div class="content-image">
+                    <img
+                        src="./assets/images/Explore-varieties.svg"
+                        alt="Create an account"
+                    />
+                </div>
+             
+            </div>
+            <div class="content content-checkout">
+                <div class="content-block">
+                    <h2 class="content-block-header">Checkout</h3>
+                    <h3 class="content-block-content" >When you done check out and get it delivered.</h3>
+                    <h4 class="content-block-desc">When you done check out and get it delivered with ease.</h4>
+                </div>
+                <div class="content-image">
+                    <img
+                        src="./assets/images/payment.svg"
+                        alt="Create an account"
+                    />
+                </div>
+            </div>
+        </div>
+        <div id="download">
+            <h1 class="download-title">Download the app now.</h1>
+            <h2 class="download-content">Available on your favorite store. Start your premium experience now</h2>
+            <div class="download-button-group">
+                <button>Playstore</button>
+                <button>App store</button>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footer-logo">
+                <a href="/">
+                    <img src="./assets/images/logo.svg" alt="logo" />
+                </a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="footer-icon">
+                    <img src="./assets/images/icon-twitter.svg" alt="twitter">
+                </a>
+                <a href="#" class="footer-icon">
+                    <img src="./assets/images/icon-fb.svg" alt="twitter">
+                </a>
+                <a href="#" class="footer-icon">
+                    <img src="./assets/images/icon-instagram.svg" alt="twitter">
+                </a>
+            </div>
+            <div class="footer-copyright">
+                <h5>Copywright 2020 Bella Onojie.com</h5>
+            </div>
+        </div>
+
+
+        <script>
+            const btnMenu = document.querySelector(".nav-menu-icon");
+            const menu = document.querySelector(".nav-wrapper");
+            const overlay = document.querySelector(".overlay");
+            btnMenu.addEventListener("click" , () => {
+                menu.style = "transform: translateX(0)";
+                overlay.style = "display: block";
+            })
+
+            overlay.addEventListener("click" , () => {
+                menu.style = " transform: translateX(calc(100% + 20px))"
+                overlay.style = "display: none";
+            })
+
+
+
+
+
+        </script>
+    </body>
+</html>
